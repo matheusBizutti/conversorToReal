@@ -1,7 +1,8 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+
+import { AppConversor } from './app.component';
 
 import { Configurations } from './../pages/configurations/configurations';
 import { Conversor } from '../pages/conversor/conversor';
@@ -12,18 +13,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-    MyApp,
+    AppConversor,
     Configurations,
     Conversor,
     TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(AppConversor)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    AppConversor,
     Configurations,
     Conversor,
     TabsPage
