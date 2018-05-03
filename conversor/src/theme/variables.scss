@@ -38,9 +38,17 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  primary-light: #0C9ABE
 );
 
+@font-face {
+  font-family: 'NunitoSans-Bold';
+  src: url('../assets/fonts/NunitoSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  color: #4a5c60;
+}
 
 // App iOS Variables
 // --------------------------------------------------
