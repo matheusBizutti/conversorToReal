@@ -1,9 +1,22 @@
 <ion-header>
-  <ion-navbar color="primary-light">
+  <ion-navbar>
     <ion-title>Conversor R$</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  
+
+  <ion-item>
+    <ion-input type="number" placeholder="Valor de entrada R$" [(ngModel)]="realValue"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <!-- <ion-input type="number" placeholder="Valor convertido USD" [(ngModel)]="convertValue"></ion-input> -->
+    <label>- {{ convertValue }}</label>
+  </ion-item>
+
+  <ion-item>
+      <button ion-button large (click)="convert()" [disabled]="!realValue">Converter</button>
+    </ion-item>
+
 </ion-content>

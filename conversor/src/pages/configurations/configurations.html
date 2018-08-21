@@ -1,11 +1,19 @@
 <ion-header>
-  <ion-navbar color="primary-light">
+  <ion-navbar>
     <ion-title>
       Configurações
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+    <ion-item>
+      <ion-input type="number" placeholder="Valor do dolar" [(ngModel)]="dollar"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button large (click)="setValue()" [disabled]="!dollar">Salvar valor</button>
+    </ion-item>
 
 </ion-content>
