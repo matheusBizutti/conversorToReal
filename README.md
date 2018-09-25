@@ -1,2 +1,2 @@
 # conversortoreal
-Conversor of dollars and pesos for real.
+Conversor of dollars for real.
